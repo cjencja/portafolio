@@ -1,0 +1,43 @@
+#menu-bar {
+		display: none;
+}
+
+header label {
+	float:right;
+	font-size: 17px;
+	margin: 6px 0;
+	cursor:pointer;
+} 
+/* esto es el icono de menu para darle clic y su ubicacion*/
+
+.menu {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 30%;
+	height: 100vh;
+	background: rgba(51,51,51,0.9);
+	transition: 0.7s ease-in-out;
+	transform: translateX(-100%);
+} 
+/* esto es cuando se despliega el menu de la izquierda  el height tiene vh es para que siempre ocupe el 100% de la ventana, el transition es para que se vaya en una velocidad y el transform para que corra de izq a der*/
+
+.menu a {
+	display:block;
+	color: #fff;
+	height: 50px;
+	text-decoration: none;
+	padding: 15px;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+} 
+/* esto es la creación del cuadro donde se ubican el menu de "a", como se ve el texto y como tiene las lineas blancas debajo*/
+
+.menu a:hover {
+	background: rgba(255,255,255,0.3);
+} 
+/* essto es basicamente que cuando pase la mano encima de cada uno de los menus "a" se ponga*/
+
+#menu-bar:checked ~ .menu {
+	transform: translateX(0%);
+} /* cuando el menu bar este con el check marcado entonces que se transforme en la dirección contraria*/
+}

@@ -1,0 +1,55 @@
+#blog__text h3, h4, h2 {
+	text-align:center;
+	margin-bottom:20px
+}
+
+/*#blog__img{
+	outline: 10px solid red;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+	
+	
+} /* display flex hace que las cajas que esten dentro de contenedor sea flexibles cuando se cambie el tamaño, y flex wrap es para uqe se ponga una encima de otra
+
+#blog article {
+	margin:15px;
+}
+
+#blog img {
+	width:auto;
+	max-width: 100%;
+	margin-top: 50px;
+	
+} 
+*/
+/*---------------*/
+.blog {
+outline: 10px solid red;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+	
+.blog__servicios  {
+	width: 33%;
+	background: #fba919;
+	color: #fff;
+	padding: 15px;
+	margin-bottom: 30px;	
+}
+
+.blog__img {
+	max-width:100%;
+}
+
+.blog__text {
+
+	text-align: center;
+}
+
+
+
